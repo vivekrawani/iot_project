@@ -3,15 +3,11 @@ import time
 
 buzzPin = 22
 
-buzzPin = 22
-
 def turn_on_buzzer():
   GPIO.output(buzzPin, GPIO.HIGH)
 
 def turn_off_buzzer():
   GPIO.output(buzzPin, GPIO.LOW)
-
-
 
 def beep():
   GPIO.setmode(GPIO.BCM)
@@ -21,8 +17,6 @@ def beep():
   turn_off_buzzer()
   time.sleep(1)
   
-
-
-# if __name__ == '__main__':    
-#   beep()
+if __name__ == '__main__':    
+  beep()
    
